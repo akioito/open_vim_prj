@@ -23,5 +23,5 @@ Sublime Text/Preferences/Browse Packages...
 
 ```
 cd "$HOME/Library/Application Support/Sublime Text 3/Packages"
-git clone (Todo:) 
+git https://github.com/akioito/open_vim_prj                               
 ```
