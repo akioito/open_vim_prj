@@ -19,7 +19,7 @@ class OpenVimPrjCommand(sublime_plugin.WindowCommand):
         active_group = window.active_group()
         curr_view_id = window.active_view_in_group(active_group).id()
         for v in window.views_in_group(active_group):
-            if not v.file_name().endswith('prj'):
+            if v.file_name() and not v.file_name().endswith('prj'):
                 window.focus_view(v)
                 window.run_command("close")
 
