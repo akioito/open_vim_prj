@@ -1,0 +1,12 @@
+{ 
+   "sublime_text":"*",
+   "dependencies":[ 
+
+   ],
+   "version":"1.0.0",
+   "url":"https://github.com/akioito/open_vim_prj",
+   "description":"Open files in file.vim-prj",
+   "platforms":[ 
+      "*"
+   ]
+}

@@ -1,0 +1,6 @@
+[
+  {
+    "caption": "Open Files In file.vim-prj",
+    "command": "open_vim_prj"
+  }
+]

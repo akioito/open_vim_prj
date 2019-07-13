@@ -1,0 +1,9 @@
+[
+  {
+    "keys": [
+      "ctrl+o",
+      "ctrl+o"
+    ],
+    "command": "open_vim_prj"
+  }
+]

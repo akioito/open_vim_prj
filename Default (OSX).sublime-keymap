@@ -1,0 +1,9 @@
+[
+  {
+    "keys": [
+      "super+o",
+      "super+o"
+    ],
+    "command": "open_vim_prj"
+  }
+]
