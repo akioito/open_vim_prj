@@ -21,7 +21,8 @@ class OpenVimPrjCommand(sublime_plugin.WindowCommand):
             if v.id() == curr_view_id:
                 continue
             window.focus_view(v)
-            window.run_command("close")
+            if not v.file_name().endswith('prj'):
+                window.run_command("close")
 
         file_list_regions = active_sheet_view.split_by_newlines(sublime.Region(0, active_sheet_view.size()))
         filesList = []
