@@ -3,7 +3,7 @@
 Usage:
 
  Open file vim-prj<br>
- Ctl-o Ctl-o
+ Ctl-o Ctl-p
  
 test.vim-prj
 ```
@@ -23,5 +23,5 @@ Sublime Text/Preferences/Browse Packages...
 
 ```
 cd "$HOME/Library/Application Support/Sublime Text 3/Packages"
-git https://github.com/akioito/open_vim_prj                               
+git clone https://github.com/akioito/open_vim_prj                               
 ```

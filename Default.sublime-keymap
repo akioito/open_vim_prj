@@ -2,7 +2,7 @@
   {
     "keys": [
       "ctrl+o",
-      "ctrl+o"
+      "ctrl+p"
     ],
     "command": "open_vim_prj"
   }

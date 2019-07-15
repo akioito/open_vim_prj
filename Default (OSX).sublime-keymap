@@ -2,7 +2,7 @@
   {
     "keys": [
       "super+o",
-      "super+o"
+      "super+p"
     ],
     "command": "open_vim_prj"
   }
