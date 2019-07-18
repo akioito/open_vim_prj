@@ -19,16 +19,12 @@ class OpenVimPrjCommand(sublime_plugin.WindowCommand):
         window = self.window
         active_group = window.active_group()
 
-        prjList = []
+        # prjList = [current_file]
         for v in window.views_in_group(active_group):
             file_name = v.file_name()
-            if file_name:
-                if file_name != current_file:
-                    if file_name.endswith('prj'):
-                        prjList.append(file_name)
+            if file_name and file_name != current_file:
                     window.focus_view(v)
                     window.run_command("close")
-        prjList.insert(0, current_file)  # project at top of Open Files
         file_list_regions = active_view.split_by_newlines(sublime.Region(0, active_view.size()))
         filesList = []
         for region in file_list_regions:
@@ -38,8 +34,7 @@ class OpenVimPrjCommand(sublime_plugin.WindowCommand):
             if line and not line.startswith('#'):
                 files = glob(line)
                 filesList += files
-        window.run_command("close")
-        for file in prjList + sorted(filesList):
+        for file in sorted(filesList):
             self.window.open_file(abspath(file))
 
 # End
